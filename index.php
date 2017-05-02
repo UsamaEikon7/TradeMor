@@ -12,8 +12,8 @@
                     <div class="hero-content container">
                         <div class="row">
                             <div class="col-md-7 t-sm-center t-md-left pt-10 pb-60 ptb-md-60 banner">  
-                                <h2 class="h1 t-uppercase mb-20">WORRY LESS, EARN MORE WITH TRADEMOR</h2>
-                                <p class="mb-40">Trademor is a global business partner of Alibaba, constantly re-inventing business-driving brands relevant to the new breeds of consumers.</hp>
+                                <h2 class="h1 t-uppercase mb-20">WORRY LESS, EARN MORE </h2>
+                                <p class="mb-40">Trademor is a global service partner of Alibaba, constantly re-inventing business-driving brands relevant to the new breeds of consumers.</hp>
                                <!-- <div>
                                     <a href="alibaba.php" class="btn btn-lg mr-10">Get start</a>
                                     <a class="btn btn-lg btn-o page-scroll" href="#about_us">Learn More</a>
@@ -25,29 +25,29 @@
                                         <h4 class="t-uppercase mb-10"><span class="color-green">Get Quote </span> and become one of the best trade partners.</h4>
                                     </div>
                                     <div class="hero-form-wrapper">
-                                        <form method="post" action="php/send-email-form.php">
+                                        <form id="quote_form" method="post" onsubmit="event.preventDefault();">
                                             <div class="mb-15">
                                                 <div class="field">
-                                                    <input name="fname" type="text" class="form-control input-lg" placeholder="Full Name">
+                                                    <input id="quote_fname" name="fname" type="text" class="form-control input-lg" placeholder="Full Name" required="required">
                                                     <i class="fa fa-user font-15"></i>
                                                 </div>
                                             </div>
-											<div class="mb-15">
+                                            <div class="mb-15">
                                                 <div class="field">
-                                                    <input name="number" type="text" class="form-control input-lg" placeholder="Contact Number">
+                                                    <input id="quote_number" name="number" type="text" class="form-control input-lg" placeholder="Contact Number" required="required">
                                                     <i class="fa fa-phone font-15"></i>
                                                 </div>
-											</div>
-											<div class="mb-15">
+                                            </div>
+                                            <div class="mb-15">
                                                 <div class="field">
-                                                    <input name="email" type="email" class="form-control input-lg" placeholder="Email Address">
+                                                    <input id="quote_email" name="email" type="email" class="form-control input-lg" placeholder="Email Address" required="required">
                                                     <i class="fa fa-envelope font-15"></i>
                                                 </div>
                                             </div>
                                             <div class="mb-15">
                                                 <div class="field field-select">
                                                     <i class="fa fa-angle-down font-20"></i>
-                                                    <select name="interested" id="interested" class="form-control input-lg" data-placeholder="Interested In">
+                                                    <select id="quote_interested" name="interested" id="interested" class="form-control input-lg" data-placeholder="Interested In" required="required">
                                                         <option value="1">Alibaba gold suppliers packages</option>
                                                         <option value="2">SMS Campaign</option>
                                                         <option value="3">Newsletter Campaign</option>
@@ -55,7 +55,7 @@
                                                 </div>
                                             </div>
                                             <div class="mb-15">
-                                                <button type="submit" class="btn btn-lg btn-block">Get Quote</button>
+                                                <button id="quote_submit" onclick="quote_form_submit()" class="btn btn-lg btn-block">Get Quote</button>
                                             </div>
                                             
                                         </form>
@@ -74,7 +74,7 @@
                             <div class="col-xs-12 col-sm-10 col-md-8 col-md-offset-2 col-sm-offset-1">
                                 <h2 class="mb-20 font-24 t-uppercase">About Us</h2>
                                 <p class="mb-20 color-mid">
-                                    Trademór is an official local channel partner of Alibaba.com. Through Trademór, you can showcase and sell your products to a global community of buyers on Alibaba, as well as get access to a dedicated sales force. We envision a future where global trade and e-commerce connects not only nations but each individual, each business unit and each industry at the micro level.
+                                    Trademór is an official global service partner of Alibaba.com. Through Trademór, you can showcase and sell your products to a global community of buyers on Alibaba, as well as get access to a dedicated sales force. We envision a future where global trade and e-commerce connects not only nations but each individual, each business unit and each industry at the micro level.
                                 </p>
                                 <!--<a href="#" class="btn btn-lg btn-rounded"> read more</a>-->
                             </div>
@@ -123,7 +123,7 @@
                 <!-- End About US Area -->
 
                 <!-- Start Two Cols Area -->
-                <section class="section two-cols-area pt-60 bg-gray">
+                <section class="section two-cols-area pt-60 bg_logo ">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6 col-md-5 pb-60 about_us_p">
@@ -138,12 +138,12 @@
                                 </ul> -->
                                 <div>
                                     <!-- <a href="alibaba.php" class="btn btn-lg mr-10">Get start</a> -->
-                                    <a class="btn btn-lg btn-o page-scroll" href="#"> About Alibaba</a>
+                                    <a class="btn btn-lg btn-o page-scroll" href="alibaba.php"> About Alibaba</a>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-7 pb-60">
 								<div class="fluid-width-video-wrapper js-video">
-									<iframe name="ifr" src='https://player.vimeo.com/video/212863508' width="540px" height="360px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="nofocusvideo"></iframe>
+									<iframe name="ifr" src='https://player.vimeo.com/video/207102028' width="540px" height="360px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="nofocusvideo"></iframe>
 								</div>
 
                             </div>
@@ -260,7 +260,7 @@
                                     </div>
                                     <div class="service-content pt-20">
                                         <h5 class="mb-10 t-uppercase service-heading">Alibaba GGS Packages</h5>
-                                      <!--   <p class="color-mid mb-15">Become Alibaba Gold Supplier through Trademór, the Official Alibaba's channel partner in Pakistan.</p> -->
+                                       <p class="color-mid mb-15">Become Alibaba Gold Supplier through Trademór, the Official Alibaba's channel partner in Pakistan.</p> 
                                        
                                     </div>
                                 </div>
@@ -268,12 +268,24 @@
                             <div class="col-md-3 col-sm-6 pb-60">
                                 <div class="service-single">
                                     <div class="service-thumb">
-                                        <img src="assets/images/services/02.jpg" alt="">
+                                        <img src="assets/images/services/02.jpeg" alt="">
                                     </div>
                                     <div class="service-content pt-20">
                                         <h5 class="mb-10 t-uppercase service-heading">Alibaba VAS Services</h5>
-                                        <!-- <p class="color-mid mb-15">With Trademór's exclusive services, get more orders through Alibaba Platform.</p> -->
+                                        <p class="color-mid mb-15">With Trademór's exclusive services, get more orders through Alibaba Platform.</p> 
                                       
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-md-3 col-sm-6 pb-60">
+                                <div class="service-single">
+                                    <div class="service-thumb">
+                                        <img src="assets/images/services/07.jpg" alt="">
+                                    </div>
+                                    <div class="service-content pt-20">
+                                        <h5 class="mb-10 t-uppercase service-heading">Alibaba Training</h5>
+                                        <p class="color-mid mb-15">Trademór provides advanced training for Alibaba trade portal.</p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -284,7 +296,7 @@
                                     </div>
                                     <div class="service-content pt-20">
                                         <h5 class="mb-10 t-uppercase service-heading">SMS Marketing</h5>
-                                        <!-- <p class="color-mid mb-15">Vestibulum nunc ante, sagittis ut nisl at, porta porttitor justo. Nam imperdiet ...</p> -->
+                                        <p class="color-mid mb-15">Create relationships by spreading word of your products far and wide through SMS marketing.</p>
                                         
                                     </div>
                                 </div>
@@ -292,11 +304,11 @@
                             <div class="col-md-3 col-sm-6 pb-60">
                                 <div class="service-single">
                                     <div class="service-thumb">
-                                        <img src="assets/images/services/04.jpg" alt="">
+                                        <img src="assets/images/services/04.jpeg" alt="">
                                     </div>
                                     <div class="service-content pt-20">
                                         <h5 class="mb-10 t-uppercase service-heading">Email Marketing</h5>
-                                        <!-- <p class="color-mid mb-15">Vestibulum nunc ante, sagittis ut nisl at, porta porttitor justo. Nam imperdiet ...</p> -->
+                                         <p class="color-mid mb-15">Trademór helps you establish a clientele by campaigning through creative email marketing.</p> 
                                         
                                     </div>
                                 </div>
@@ -308,7 +320,7 @@
                                     </div>
                                     <div class="service-content pt-20">
                                         <h5 class="mb-10 t-uppercase service-heading">Search Engine Optimization</h5>
-                                        <!-- <p class="color-mid mb-15">Vestibulum nunc ante, sagittis ut nisl at, porta porttitor justo. Nam imperdiet ...</p> -->
+                                       <p class="color-mid mb-15">Trademór offers SEO to help you be more visible in the vast online market.</p> 
                                        
                                     </div>
                                 </div>
@@ -320,19 +332,7 @@
                                     </div>
                                     <div class="service-content pt-20">
                                         <h5 class="mb-10 t-uppercase service-heading">Website Development</h5>
-                                        <!-- <p class="color-mid mb-15">Vestibulum nunc ante, sagittis ut nisl at, porta porttitor justo. Nam imperdiet ...</p> -->
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 pb-60">
-                                <div class="service-single">
-                                    <div class="service-thumb">
-                                        <img src="assets/images/services/07.jpeg" alt="">
-                                    </div>
-                                    <div class="service-content pt-20">
-                                        <h5 class="mb-10 t-uppercase service-heading">Videography</h5>
-                                      <!--   <p class="color-mid mb-15">Vestibulum nunc ante, sagittis ut nisl at, porta porttitor justo. Nam imperdiet ...</p> -->
+                                        <p class="color-mid mb-15">Trademór develops beautiful, simple and interactive websites to cater your customer's needs.</p>
                                         
                                     </div>
                                 </div>
@@ -343,12 +343,13 @@
                                         <img src="assets/images/services/08.jpeg" alt="">
                                     </div>
                                     <div class="service-content pt-20">
-                                        <h5 class="mb-10 t-uppercase service-heading">Photography</h5>
-                                        <!-- <p class="color-mid mb-15">Vestibulum nunc ante, sagittis ut nisl at, porta porttitor justo. Nam imperdiet ...</p> -->
+                                        <h5 class="mb-10 t-uppercase service-heading">Videography & Photography</h5>
+                                     <p class="color-mid mb-15">We create amazing footage and pictures of your products, to create a buzz around in the media.</p> 
                                         
                                     </div>
                                 </div>
                             </div>
+                           
                         </div>
                     </div>
                 </section>
@@ -688,7 +689,7 @@
                                         <!-- <div class="testimonial-thumb">
                                             <img src="assets/images/testimonial/03.jpg" alt="">
                                         </div> -->
-                                        <h5 class="client-name t-uppercase mb-5">Kim Oliver</h5>
+                                        <h5 class="client-name t-uppercase mb-5">Sultan Ali</h5>
                                         <h6 class="client-designation color-mid">Gold Supplier</h6>
                                     </div>
                                 </div>
@@ -807,7 +808,7 @@
                                 <p class="color-mid">Want to know more about us? Our teams are ready to help. Give us a call or drop us an email and we will get back to you as soon as we can.</p>
                             </div>
                         </div>
-                        <div class="row mb-20">
+                      <!--   <div class="row mb-20">
                             <div class="col-md-3 col-sm-6 mb-30">
                                 <div class="contact-box t-center p-20">
                                     <div class="contact-icon">
@@ -824,7 +825,7 @@
                                     </div>
                                     <h5 class="t-uppercase mb-10">Call Us</h5>
                                     <p class="color-mid">Phone : +92 51 873 4541
-                                      <!--   <br> Fax : +52 202 545 0847</p> -->
+                                       <br> Fax : +52 202 545 0847</p> 
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6 mb-30">
@@ -847,16 +848,71 @@
                                         <br> Saturday-Sunday : Closed</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row row-md-cell row-rl-0 pb-20 pb-md-60">
-                            <div class="col-md-6 col-md-push-6 pb-40 pb-md-0">
-                                <div class="google-map col-absolute-cell embed-responsive">
-                                 <iframe width="100%" height="600" src="http://www.citymaps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;coord=33.7183278,73.05902579999997&amp;q=House%20no%2011%20Street%2029%20F7%2F1%2C%20Islamabad%2C+(Tradem%C3%B3r)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.mapsdirections.info/fr/mesurer-distance-surface-google-maps.html">www.mapsdirections.info</a></iframe>
+                        </div> -->
+
+
+
+
+                        <div class="row mb-20">
+                            <div class="col-md-3 col-sm-6 mb-30">
+                                <div class="contact-box t-center p-20">
+                                    <div class="contact-icon">
+                                       <img src="assets/images/city/islamabad.png"/>
+                                    </div>
+                                    <h5 class="t-uppercase mb-10">ISLAMABAD</h5>
+                                    <div class="office_location">
+                                        <i class="lnr lnr-phone"></i><p class="color-mid"><a href="tel:+92518734541">  051-8734541</a></p>
+                                        <i class="lnr lnr-map-marker"></i><p class="color-mid">House
+                                        No 11 Street 29 F7/1, Islamabad, Pakistan</p>
+                                        <i class="lnr lnr-envelope"></i><p class="color-mid">info@trademor.com</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-md-pull-6 pr-20 pr-md-30 pl-md-0 pb-40 pb-md-0">
+                            <div class="col-md-3 col-sm-6 mb-30">
+                                <div class="contact-box t-center p-20">
+                                    <div class="contact-icon">
+                                        <img src="assets/images/city/lahore2.png"/>
+                                    </div>
+                                    <h5 class="t-uppercase mb-10">LAHORE</h5>
+                                    <div class="office_location">
+                                        <i class="lnr lnr-phone"></i><p class="color-mid"><a href="tel:+92423524663">  042-3524663</a></p>
+                                        <i class="lnr lnr-map-marker"></i><p class="color-mid">T/29 Gulberg 2 Near MM Alam Road, Lahore, Pakistan</p>
+                                        <i class="lnr lnr-envelope"></i><p class="color-mid">info@trademor.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-30">
+                                <div class="contact-box t-center p-20">
+                                    <div class="contact-icon">
+                                        <img src="assets/images/city/karachi_1.png"/>
+                                    </div>
+                                    <h5 class="t-uppercase mb-10">KARACHI</h5>
+                                    <div class="office_location">
+                                        <i class="lnr lnr-phone"></i><p class="color-mid"><a href="tel:+922135147841">  021-35147841</a></p>
+                                        <i class="lnr lnr-map-marker"></i><p class="color-mid">Ground Floor, Bahria Complex IV. Ch Khaliq-uz-Zaman Road, Karachi, Pakistan</p>
+                                        <i class="lnr lnr-envelope"></i><p class="color-mid">info@trademor.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-30">
+                                <div class="contact-box t-center p-20">
+                                    <div class="contact-icon">
+                                        <img src="assets/images/city/sialkot.png"/>
+                                    </div>
+                                    <h5 class="t-uppercase mb-10">SIALKOT</h5>
+                                    <div class="office_location">
+                                        <i class="lnr lnr-phone"></i><p class="color-mid"><a href="tel:+92528734541">  052-8734541</a></p>
+                                        <i class="lnr lnr-map-marker"></i><p class="color-mid">Naveed Murad Sherwani Colony,Imam Sahib Road, Sailkot, Pakistan</p>
+                                        <i class="lnr lnr-envelope"></i><p class="color-mid">info@trademor.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-md-cell row-rl-0 pb-20 pb-md-60">
+                            
+                            <div class="col-md-12  pr-20 pr-md-30 pl-md-0 pb-40 pb-md-0">
                                 <div class="contact-form">
-                                    <form action="php/send-email.php" method="post">
+                                    <form action="php/contact_me.php" method="post">
                                         <div class="row">
                                             <div class="col-xs-6 mb-15">
                                                 <input name="fname" type="text" class="form-control input-lg" placeholder="Your Name" required="required">
@@ -865,7 +921,7 @@
                                                 <input name="email" type="email" class="form-control input-lg" placeholder="Email Address " required="required">
                                             </div>
                                             <div class="col-xs-12 mb-15">
-                                                <input name="subject" type="text" class="form-control input-lg" placeholder="Subject" required="required">
+                                                <input name="contact_number" type="text" class="form-control input-lg" placeholder="Contact Number" required="required">
                                             </div>
                                             <div class="col-xs-12 mb-15">
                                                 <textarea name="message" type="text" class="form-control input-lg" placeholder="Message" rows="7" required="required"></textarea>
@@ -881,6 +937,37 @@
                     </div>
                 </section>
                 <!-- End Contact US Area -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                                <h2>Thanks For Contacting Us</h2>
+                        </div>
+                        <div class="modal-body">
+                          <p id="first_line"></p>
+                          <p id="second_line"></p>
+                        </div>  
+                        <div class="modal-footer">
+                          
+                        </div>
+                    </div>
+                </div>
+
+                <div id="myModal-1" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                                <h2>Thanks For Contacting Us</h2>
+                        </div>
+                        <div class="modal-body">
+                          <p id="first_line"></p>
+                          <p id="second_line"></p>
+                        </div>  
+                        <div class="modal-footer">
+                          
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </main>

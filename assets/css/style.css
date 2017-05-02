@@ -4412,8 +4412,28 @@ fieldset[disabled] .btn {
   }
   .slogan_alibaba_p {
     margin-left: 0px !important;
-    width:100% !important;
+    width:80% !important;
     padding-top: 90px;
+}
+.owl-carousel .item {
+    margin-right: 0px !important;
+}
+.service-heading {
+    height: auto !important;
+    text-align: center;
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80% !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
 }
 }
 
@@ -4428,6 +4448,29 @@ fieldset[disabled] .btn {
     width:100% !important;
     padding-top: 90px;
   }
+  .service-heading {
+    height: auto !important;
+    text-align: center;
+}
+.owl-carousel .item {
+    margin-right: 0px !important;
+}
+ .alibaba_footer_img{
+    margin-left: 0px !important;
+  }
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80% !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
 }
 @media screen and (max-width: 768px) {
   .navbar-default .navbar-nav {
@@ -4472,10 +4515,19 @@ fieldset[disabled] .btn {
     margin-left: 240px !important;
     width: 70%;
   }
-
+    .service-heading {
+    height: auto !important;
+    text-align: center;
+  }
+  .alibaba_footer_img{
+    margin-left: 140px;
+  }
 }
-
-
+@media screen and (max-width: 1024px) {
+  .alibaba_footer_img{
+    margin-left: 255px;
+  }
+}
 /* ––––––––––––––––––––––––––––––––––––––––––––– */
 /* ––––––––––––>>> Hero Area  <<<–––––––––– */
 /* ––––––––––––––––––––––––––––––––––––––––––––– */
@@ -4488,7 +4540,7 @@ fieldset[disabled] .btn {
     color: #f79226;
 }
 .slogan_alibaba_p {
-  margin-left: 285px;
+  margin-left: 305px;
   width: 70%;
 }
 .slogan_alibaba_p h2{
@@ -4522,10 +4574,10 @@ fieldset[disabled] .btn {
   opacity: .7;
 }
 .hero-overlay-gradient {
-  background: #700877;
-  background: -moz-linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
-  background: -webkit-linear-gradient(90deg, #700877 0%, #03153d 100%, #03153d 100%);
-  background: linear-gradient(90deg, #700877 0%, #03153d 100%, #03153d 100%);
+  background: #0E1D40;
+  background: -moz-linear-gradient(90deg,#0E1D40 0%, #ff2759 100%, #ff2759 100%);
+  background: -webkit-linear-gradient(90deg, #0E1D40 0%, #03153d 100%, #03153d 100%);
+  background: linear-gradient(90deg, #0E1D40 0%, #03153d 100%, #03153d 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#700877', endColorstr='#ff2759',GradientType=1 );
   opacity: 0.7;
 }
@@ -4819,7 +4871,6 @@ fieldset[disabled] .btn {
   display: block;
   position: absolute;
   background-color: #0E1D40;
-  opacity: .7;
   width: 100%;
   height: 100%;
   top: 0;
@@ -4905,7 +4956,7 @@ fieldset[disabled] .btn {
     width: 100%;
     height: 100%;
     background-color: #0E1D40;
-    opacity: .6;
+    
     z-index: -1;
 }
 .testimonial-slider .item{
@@ -4952,6 +5003,9 @@ fieldset[disabled] .btn {
 }
 .slogen h2{
   font-size: 60px;
+}
+.slogan h2{
+  font-size: 50px;
 }
 /* ––––––––––––––––––––––––––––––––––––––––––––– */
 /* –––––––––>>> Call to action Area  <<<–––––––– */
@@ -5317,4 +5371,111 @@ fieldset[disabled] .btn {
 }
 .widget p a{
   color:#f79226;
+}
+.owl-carousel .item{
+    margin-right: 40px;
+}
+.office_location i {
+    float: left;
+    font-size: 20px;
+    margin-top: 2px;
+    color: #717f86 !important;
+}
+.office_location p {
+    text-align: left;
+    margin-left: 32px;
+  }
+.contact-icon img{
+  width:46% !important;
+} 
+.bg_logo{
+  background: url(../images/background/bg_logo.png);
+  background-size: cover;
+}
+.bg_logo_2{
+  background: url(../images/background/bg_logo_2.png);
+  background-size: cover;
+}
+.copyright  a{
+  color:#f79226;
+}
+.navbar-header span a{
+  color:  #314555
+}
+.navbar-header span a:hover{
+  color:  #314555
+}
+ .get-in-touch a{
+  color:#ffffff;
+}
+.office_location a{
+  color: #717f86 ;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 45%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #f79226;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #f79226 ;
+    color: white;
 }
